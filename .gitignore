@@ -1,6 +1,8 @@
 # Custom
 .DS_Store
 *.ipynb_checkpoints/
+*.ipynb
+!transformer_based.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
