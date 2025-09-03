@@ -224,8 +224,8 @@ def compare_and_plot(
     print(f"Metric: {BOLD}{metric_label}{RESET}  |  Outliers: {BOLD}{outliers}{RESET}")
     print("─" * 100)
 
-    print(f"{BOLD}{(groups[0] + ':'):<11}{RESET} {st_f.m0  :7.4f} (+/- {st_f.s0:6.4f}) | n = {st_f.n0:3} ({st_r.n0:3})")
-    print(f"{BOLD}{(groups[1] + ':'):<11}{RESET} {st_f.m1  :7.4f} (+/- {st_f.s1:6.4f}) | n = {st_f.n1:3} ({st_r.n1:3})")
+    print(f"{BOLD}{(groups[0] + ':'):<11}{RESET} {st_f.m0  :>8.4f} (+/- {st_f.s0:6.4f}) | n = {st_f.n0:3} ({st_r.n0:3})")
+    print(f"{BOLD}{(groups[1] + ':'):<11}{RESET} {st_f.m1  :>8.4f} (+/- {st_f.s1:6.4f}) | n = {st_f.n1:3} ({st_r.n1:3})")
     print(f"{BOLD}{'Diff:'          :<11}{RESET} {st_f.diff:>8.4f} | 95% CI [{st_f.ci_lo:6.4f}, {st_f.ci_hi:6.4f}]\n")
 
     print(f"Welch t p = {st_f.p_welch:8.5f}  |  Mann-Whitney p = {st_f.p_mwu:8.5f}")
